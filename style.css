@@ -1,0 +1,405 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url(back.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+@media (min-width:310px){
+    header{
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(50px);
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+    
+    nav h2{
+        color: #e4e4e4;
+        font-size: 25px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        height: 500px;
+        position: relative;
+        top: 25px;
+        border-radius:30px ;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(10px);
+    }
+    
+    .container .searchArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .searchArea input{
+        box-shadow: 0 0 5px white;
+        margin: 10px;
+        border:none ;
+        border-radius:30px ;
+        width: 180px;
+        height: 45px;
+        padding-left: 5px;
+        font-size: 12px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        color: #e4e4e4;
+        outline: none;
+    }
+
+    input ::placeholder{
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .searchArea button{
+        border:none ;
+        box-shadow: 0 0 5px white;
+        border-radius:30px ;
+        width: 60px;
+        height: 45px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        color: #e4e4e4;
+    }
+
+    .searchArea button:hover{
+        transform: scale(1.2);
+    }
+
+    .container .text{
+        height: 100%;
+        font-size: 18px;
+        color: #e4e4e4;
+    }
+    
+    .text h1{
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+    
+    .text h1 span{
+        font-size: 25px; 
+        
+        
+    }
+    
+    .text p{
+        margin: 20px;
+        font-weight: bold;
+    }
+    
+    .text span{
+        font-size: 15px;
+    }
+    
+    .text a{
+        box-shadow: 0 0 10px black;
+        position: absolute;
+        bottom: 20px;
+        left: 75px;
+        width: 150px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+        color: #e4e4e4;
+        box-shadow: 0 0 5px white;
+        
+    }
+
+    
+    .text a:hover{
+        transform: scale(1.2);
+    }
+    
+}
+
+@media (min-width:768px){
+    header{
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0 0 10px black;
+        overflow: hidden;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(50px);
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+
+    nav h2{
+        font-size: 45px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 700px;
+        position: relative;
+        top: 25px;
+        border-radius:30px ;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(20px);
+    }
+
+    .container .searchArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .searchArea input{
+        box-shadow: 0 0 10px white;
+        margin: 10px;
+        border:none ;
+        border-radius:30px ;
+        width: 300px;
+        height: 65px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    input ::placeholder{
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .searchArea button{
+        border:none ;
+        box-shadow: 0 0 10px white;
+        border-radius:30px ;
+        width: 110px;
+        height: 65px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    
+    .searchArea button:hover{
+        transform: scale(1.2);
+    }
+
+    .container .text{
+        height: 100%;
+        font-size: 20px;
+        color: #e4e4e4;
+    }
+    
+    .text h1{
+        margin-top: 60px;
+        margin-left: 35px;
+    }
+    
+    .text h1 span{
+        font-size: 35px;
+        color:white;         
+    }
+    
+    .text p{
+        margin: 30px;
+        font-weight: bold;
+    }
+    
+    .text span{
+        font-size: 18px;
+        color:white; 
+    }
+    
+    .text a{
+        box-shadow: 0 0 10px white;
+        position: absolute;
+        bottom: 20px;
+        left: 180px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+        color: #e4e4e4;  
+        box-shadow: 0 0 5px white;      
+    }
+    
+    
+    .text a:hover{
+        transform: scale(1.2);
+    }
+    
+}
+
+
+@media (min-width:1024px){
+    header{
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0 0 10px black;
+        overflow: hidden;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(50px);
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 105px;
+    }
+    
+    nav h2{
+        font-size: 55px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 700px;
+        position: relative;
+        top: 30px;
+        border-radius:30px ;
+        box-shadow: 0 0 10px white;
+        backdrop-filter: blur(20px);
+    }
+    
+    .container .searchArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .searchArea input{
+        box-shadow: 0 0 10px white;
+        margin: 10px;
+        border:none ;
+        border-radius:30px ;
+        width: 500px;
+        height: 65px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    input ::placeholder{
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .searchArea button{
+        border:none ;
+        box-shadow: 0 0 10px white;
+        border-radius:30px ;
+        width: 140px;
+        height: 65px;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    
+    .searchArea button:hover{
+        transform: scale(1.2);
+    }
+    
+    .container .text{
+        height: 100%;
+        font-size: 25px;
+        color: #e4e4e4;
+    }
+    
+    .text h1{
+        margin-top: 70px;
+        margin-left: 35px;
+    }
+    
+    .text h1 span{
+        font-size: 50px;
+        color:white;  
+        
+        
+    }
+    
+    .text p{
+        margin: 30px;
+        font-weight: bold;
+    }
+    
+    .text span{
+        font-size: 20px;
+        color:white; 
+        
+    }
+    
+    .text a{
+        box-shadow: 0 0 10px black;
+        position: absolute;
+        bottom: 20px;
+        left: 300px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+        color: #e4e4e4;
+        box-shadow: 0 0 5px white;
+        
+    }
+    
+    
+    .text a:hover{
+        transform: scale(1.2);
+    }
+    
+}
